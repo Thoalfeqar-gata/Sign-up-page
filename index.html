@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>A simple sign-up form</title>
+    </head>
+    <body>
+        <div class="side-content">
+            <div class="odin">
+                <img src="Images/odin-lined.png" alt="Oding's image" class = "odin-image">
+                <h1 class = "odin-text">ODIN</h1>
+            </div>
+        </div>
+        
+        <main>
+            <div class="welcome-text">
+                <div>
+                    This is not a real online service!
+                    You know you need something like this in your life to help you
+                    realize your deepest dreams. 
+                    <br>
+                    Sign up now to get started.
+                </div>
     
-</body>
+                <div>
+                    You <i>know</i> you want to.
+                </div>
+    
+            </div>
+            
+            <form action="" method = "post">
+                <div class="form-background">
+                    <h2>Let's do this!</h2>
+
+                    <div class="form-inputs-container">
+                        <div class="left-half">
+                            <div class="input-wrapper">
+                                <label for="First-name">FIRST NAME</label>
+                                <input type="text" name = "First-name">    
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name = "email">    
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name = "password">    
+                            </div>
+                        </div>
+                        
+    
+                        <div class="right-half">
+                            <div class="input-wrapper">
+                                <label for="Second-name">SECOND NAME</label>
+                                <input type="text" name = "Second-name">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" name = "phone-number" pattern = "[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" name = "confirm-password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <button>Create Account</button>
+                <p class="login-message">Already have an account? <b class="login">Log in</b></p>
+            </form>
+            
+        </main>
+    </body>
 </html>
